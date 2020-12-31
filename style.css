@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&family=Teko:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --lakers-yellow: #fdb827;
+  --lakers-purple: #542583;
+  --max-width: 1200px;
+}
+body,
+html {
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+h1, h2, h3 {
+  font-family: 'Teko', sans-serif;
+}
+  
+h1{
+  font-size: 3rem;
+  color: var(--lakers-yellow);
+  letter-spacing: 5px;
+  word-spacing: 20px;
+}
+  
+h2 {
+  font-size: 2rem;
+  padding: 1rem;
+  letter-spacing: 3px;
+}
+
+.container {
+max-width: var(--max-width);
+margin: auto;
+
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  color: var(--lakers-purple);
+}
+
+/* Header */
+
+header#top {
+  height: 5rem;
+  width: 100%;
+  background: #000;
+  border-bottom: 1px solid var(--lakers-purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header#top h1 {
+  margin: auto;
+  text-align: center;
+}
+ 
+
+/* Showcase */
+section#showcase {
+margin: 5px auto;
+height: 600px;
+width: 100%;
+background: url(img/kb.jpg)no-repeat top center/cover;
+}
+
+/* Main */
+
+main.container {
+  display: flex;
+  margin-bottom: 15px;
+}
+  
+main.container .heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main.container section#biography {
+  flex: 2;
+  background: var(--lakers-yellow);
+  font-size: 1.3rem;
+  margin-right: 5px;
+  
+}
+main.container section#biography p {
+  padding: 1rem;
+  text-indent: 20px;
+  border-bottom: 1px solid var(--lakers-purple);
+}
+main.container section#biography img,
+main.container aside#achievements img,
+main.container section#quotes img {
+  height: 28px;
+}
+main.container aside#achievements {
+  flex: 1;
+  color: var(--lakers-yellow);
+  
+}
+
+aside#achievements {
+  background: var(--lakers-purple);
+  
+}
+aside#achievements ul {
+  list-style-position: inside;
+  padding: 15px;
+}
+aside#achievements ul li {
+padding: 0.5rem 0;
+font-size: 1.3rem;
+}
+aside#achievements #quotes p {
+  padding: 15px;
+  font-size: 1.3rem;
+}
+
+#quotes h2 {
+  margin-top: 15px;
+  text-align: center;
+}
+  
+/* Footer */
+
+footer {
+  height: 4rem;
+  background: #000;
+  width: 100%;
+}
+footer .container {
+  color: var(--lakers-yellow);
+  text-align: center;
+  padding-top: 10px;
+}
+footer .container p {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+}
+@media (max-width: 768px) {
+header#top h1 {
+    font-size: 2.5rem;
+    color: var(--lakers-yellow);
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+  }
+  main.container {
+    display: flex;
+    flex-direction: column;
+  }
+  main.container section#biography {
+    flex: 2;
+    background: var(--lakers-yellow);
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+  main.container {
+    display: flex;
+    margin-bottom: 5px;
+  }  
+}
+@media (max-width: 450px) {
+  header#top h1 {
+    font-size: 2.5rem;
+    color: var(--lakers-yellow);
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: 0.8;
+  }
+  footer .container {
+    color: var(--lakers-yellow);
+    text-align: center;
+    padding-top: 0;
+    line-height: 1.2;
+  }
+  main.container {
+    display: flex;
+    margin-bottom: 5px;
+  }
+  section#showcase {
+    background: url(img/kb.jpg)no-repeat -420px center/cover;
+  }
+}
+  
+
+
+
+
+
+  
+
+
+               
+  
+  
