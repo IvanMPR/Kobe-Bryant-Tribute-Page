@@ -149,6 +149,30 @@ footer .container p {
   letter-spacing: 2px;
   word-spacing: 3px;
 }
+
+@media (max-width: 450px) {
+  header#top h1 {
+    font-size: 2.5rem;
+    color: var(--lakers-yellow);
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: 0.8;
+  }
+  footer .container {
+    color: var(--lakers-yellow);
+    text-align: center;
+    padding-top: 0;
+    line-height: 1.2;
+  }
+  main.container {
+    display: flex;
+    margin-bottom: 5px;
+  }
+  section#showcase {
+    background: url(img/kb.jpg)no-repeat -420px center/cover;
+  }
+}
+
 @media (max-width: 768px) {
 header#top h1 {
     font-size: 2.5rem;
@@ -173,28 +197,7 @@ header#top h1 {
     margin-bottom: 5px;
   }  
 }
-@media (max-width: 450px) {
-  header#top h1 {
-    font-size: 2.5rem;
-    color: var(--lakers-yellow);
-    letter-spacing: normal;
-    word-spacing: normal;
-    line-height: 0.8;
-  }
-  footer .container {
-    color: var(--lakers-yellow);
-    text-align: center;
-    padding-top: 0;
-    line-height: 1.2;
-  }
-  main.container {
-    display: flex;
-    margin-bottom: 5px;
-  }
-  section#showcase {
-    background: url(img/kb.jpg)no-repeat -420px center/cover;
-  }
-}
+
   
 
 
