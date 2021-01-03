@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&family=Teko:wght@500&display=swap');
 
+:root{
+  --lakers-yellow: #fdb827;
+  --lakers-purple: #542583;
+  --max-width: 1200px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root{
-  --lakers-yellow: #fdb827;
-  --lakers-purple: #542583;
-  --max-width: 1200px;
-}
+
 body,
 html {
   font-family: 'Ropa Sans', sans-serif;
