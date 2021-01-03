@@ -152,9 +152,9 @@ footer .container p {
   word-spacing: 3px;
 }
 
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
   header#top h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: var(--lakers-yellow);
     letter-spacing: normal;
     word-spacing: normal;
@@ -175,7 +175,7 @@ footer .container p {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 header#top h1 {
     font-size: 2.5rem;
     color: var(--lakers-yellow);
