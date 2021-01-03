@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&family=Teko:wght@500&display=swap');
 
-:root{
-  --lakers-yellow: #fdb827;
-  --lakers-purple: #542583;
-  --max-width: 1200px;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
+:root {
+  --lakers-yellow: #fdb827;
+  --lakers-purple: #542583;
+  --max-width: 1200px;
+}
 body,
 html {
   font-family: 'Ropa Sans', sans-serif;
@@ -20,17 +18,19 @@ html {
   line-height: 1.4;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Teko', sans-serif;
 }
-  
-h1{
-  font-size: 3rem;
+
+h1 {
+  font-size: 3.2rem;
   color: var(--lakers-yellow);
   letter-spacing: 5px;
   word-spacing: 20px;
 }
-  
+
 h2 {
   font-size: 2rem;
   padding: 1rem;
@@ -38,9 +38,8 @@ h2 {
 }
 
 .container {
-max-width: var(--max-width);
-margin: auto;
-
+  max-width: var(--max-width);
+  margin: auto;
 }
 a {
   text-decoration: none;
@@ -60,29 +59,26 @@ header#top {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-header#top h1 {
-  margin: auto;
   text-align: center;
 }
- 
+
+
 
 /* Showcase */
 section#showcase {
-margin: 5px auto;
-height: 600px;
-width: 100%;
-background: url(img/kb.jpg)no-repeat top center/cover;
+  margin: 5px auto;
+  height: 600px;
+  width: 100%;
+  background: url(img/kb.jpg) no-repeat top center/cover;
 }
 
 /* Main */
 
 main.container {
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
-  
+
 main.container .heading {
   display: flex;
   align-items: center;
@@ -94,7 +90,6 @@ main.container section#biography {
   background: var(--lakers-yellow);
   font-size: 1.3rem;
   margin-right: 5px;
-  
 }
 main.container section#biography p {
   padding: 1rem;
@@ -109,20 +104,18 @@ main.container section#quotes img {
 main.container aside#achievements {
   flex: 1;
   color: var(--lakers-yellow);
-  
 }
 
 aside#achievements {
   background: var(--lakers-purple);
-  
 }
 aside#achievements ul {
   list-style-position: inside;
   padding: 15px;
 }
 aside#achievements ul li {
-padding: 0.5rem 0;
-font-size: 1.3rem;
+  padding: 0.5rem 0;
+  font-size: 1.3rem;
 }
 aside#achievements #quotes p {
   padding: 15px;
@@ -133,7 +126,7 @@ aside#achievements #quotes p {
   margin-top: 15px;
   text-align: center;
 }
-  
+
 /* Footer */
 
 footer {
@@ -152,54 +145,81 @@ footer .container p {
   word-spacing: 3px;
 }
 
-@media screen and (max-width: 450px) {
+/* Extra small devices (phones, 600px and down) */
+/***Galaxy Fold***/
+@media only screen and (max-width: 280px) {
   header#top h1 {
-    font-size: 2.2rem;
-    color: var(--lakers-yellow);
+    font-size: 1.6rem;
     letter-spacing: normal;
     word-spacing: normal;
-    line-height: 0.8;
-  }
-  footer .container {
-    color: var(--lakers-yellow);
-    text-align: center;
-    padding-top: 0;
-    line-height: 1.2;
-  }
-  main.container {
-    display: flex;
-    margin-bottom: 5px;
   }
   section#showcase {
-    background: url(img/kb.jpg)no-repeat -420px center/cover;
-  }
-}
-
-@media screen and (max-width: 768px) {
-header#top h1 {
-    font-size: 2.5rem;
-    color: var(--lakers-yellow);
-    letter-spacing: normal;
-    word-spacing: normal;
-    line-height: normal;
+    background: url(img/kb.jpg) no-repeat -130px center/cover;
   }
   main.container {
     display: flex;
     flex-direction: column;
-  }
-  main.container section#biography {
-    flex: 2;
-    background: var(--lakers-yellow);
-    font-size: 1.3rem;
     margin-bottom: 5px;
-    width: 100%;
   }
+
+  main.container section#biography {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  footer .container {
+    line-height: 1;
+    padding: 0.1rem;
+  }
+}
+/*******************************************************************/
+@media only screen and (min-width: 281px) and (max-width: 600px) {
+  header#top h1 {
+    font-size: 2rem;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: 1;
+  }
+
+  section#showcase {
+    background: url(img/kb.jpg) no-repeat -55px center/cover;
+  }
+
+  footer .container {
+    line-height: 1;
+  }
+
   main.container {
     display: flex;
+    flex-direction: column;
     margin-bottom: 5px;
-  }  
+  }
+
+  main.container section#biography {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  header#top h1 {
+    font-size: 2.8rem;
+    letter-spacing: 2.5px;
+    word-spacing: 10px;
+    line-height: 1;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  header#top h1 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    word-spacing: 12px;
+    line-height: 1;
+  }
+}
   
 
 
